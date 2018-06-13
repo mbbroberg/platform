@@ -8,7 +8,7 @@ type Task struct {
 	Name   string `json:"name"`
 	Status string `json:"status"`
 	Owner  User   `json:"owner"`
-	Query  string `json:"query"`
+	Script string `json:"script"`
 	Every  string `json:"every,omitempty"`
 	Cron   string `json:"cron,omitempty"`
 	Last   Run    `json:"last,omitempty"`

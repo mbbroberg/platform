@@ -727,16 +727,16 @@ components:
           ]
         owner:
           $ref: "#/components/schemas/User"
-        query:
+        script:
           description: The ifql query to run for this task.
           type: string
         every:
           readOnly: true
-          description: A simple task repetition schedule; parsed from query.
+          description: A simple task repetition schedule; parsed from script.
           type: string
         cron:
           readOnly: true
-          description: A task repetition schedule in the form '* * * * * *'; parsed from query.
+          description: A task repetition schedule in the form '* * * * * *'; parsed from script.
           type: string
         last:
           $ref: "#/components/schemas/Run"
