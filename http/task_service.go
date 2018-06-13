@@ -367,12 +367,12 @@ func decodeGetRunsRequest(ctx context.Context, r *http.Request) (*getRunsRequest
 	}
 
 	if time := qp.Get("afterTime"); time != "" {
-		// TODO (jm): verify format is correct, once we've decided on a format
+		// TODO (jm): verify valid RFC3339
 		req.filter.AfterTime = time
 	}
 
 	if time := qp.Get("beforeTime"); time != "" {
-		// TODO (jm): verify format is correct, once we've decided on a format
+		// TODO (jm): verify valid RFC3339
 		req.filter.BeforeTime = time
 	}
 
