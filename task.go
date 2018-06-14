@@ -60,7 +60,7 @@ type TaskService interface {
 
 // TaskUpdate represents updates to a task
 type TaskUpdate struct {
-	Name *string `json:"name"`
+	Script *string `json:"script"`
 }
 
 // TaskFilter represents a set of filters that restrict the returned results
